@@ -153,6 +153,14 @@ When collaborating, merging is better done using the *Merge request* or *Pull re
 
 # Cancelling commits
 
+:warning: It's rather hard to loose anything that was committed, but's it's rather easy to mess up things
+
+- `git revert cf97549a` Revert a commit by adding a new commit that do the same modifications, but in reverse (can make the logfile harder to read). The original commit is not deleted.
+
+
+- 
+
+- `git rebase` Powerful to rewrite git history but dangerous. Come back to it when you are more experienced.
 
 --- 
 
