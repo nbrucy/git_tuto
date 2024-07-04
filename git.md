@@ -25,6 +25,10 @@ paginate: true
 - Git stores the differences between to version of the same file (when it’s possible)
 - The history is never deleted (beware when uploading big files)
 - You can work on several version of the same file using branches
+
+### Train with git
+
+https://learngitbranching.js.org
  
 ![bg left:40%](figures/xkcd.png)
 
@@ -86,6 +90,26 @@ paginate: true
 
 # Working with branches
 
+![bg right:22%](figures/branch.png)
+
+Branch are useful to develop feature or bugfix in parallel
+
+### The basic commands:
+
+- `git checkout -b bugfix` Create a new branch and switch to it
+- `git checkout main` Switch to another branch
+- `git merge bugfix` Merge the branch `bugfix` into the main branch
+
+### Merging branches
+
+In a colloborative environnement, merging is better done using the *Merge request* or *Pull request* feature of Gitlab/Github
+
 ---
 
-# Checking the log
+
+# Some useful tricks
+
+- `git commit --amend` Update the last commit. 
+    :warning: Do it only if the last commit was not pushed on the remote
+
+
