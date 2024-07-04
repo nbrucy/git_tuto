@@ -40,7 +40,11 @@ https://learngitbranching.js.org
 
 **commit**: the basic operation in git to validate modifications to the code.  A commit is a version of the content of the repository. In practice, it contains the difference with respect to the previous commit.
 
-**work copy**: the status of the file in the repository. Some files may have uncommitted changes or not even be tracked by git.
+**log**: list of all the commit so far. 
+
+**commit hash**: the unique identifier of a commit. It can be found in the log.
+
+
 
 
 --- 
@@ -52,6 +56,8 @@ https://learngitbranching.js.org
 **branch**: git can track several version of the same repository, called branchs 
 
 **local & remote repository**: change are usually done on a local version of the repository, and are then synchronised with a remote copy of it (on Github, Gitlab, Gitea, or other) to allow collaboration. 
+
+**work copy**: the status of the file in the repository. Some files may have uncommitted changes or not even be tracked by git.
 
 ---
 
@@ -102,14 +108,23 @@ Branch are useful to develop feature or bugfix in parallel
 
 ### Merging branches
 
-In a colloborative environnement, merging is better done using the *Merge request* or *Pull request* feature of Gitlab/Github
+When collaborating, merging is better done using the *Merge request* or *Pull request* feature of Gitlab/Github
 
 ---
 
+# Cancelling commits
+
+
+--- 
 
 # Some useful tricks
 
 - `git commit --amend` Update the last commit. 
     :warning: Do it only if the last commit was not pushed on the remote
+- `git add -u .` Only stage updated file in this folder and subfolder to be committed
+
+---
+
+# Common mistakes
 
 
