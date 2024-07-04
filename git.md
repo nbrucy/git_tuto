@@ -155,23 +155,52 @@ When collaborating, merging is better done using the *Merge request* or *Pull re
 
 :warning: It's rather hard to loose anything that was committed, but's it's rather easy to mess up things
 
+- `git commit --amend` Update the last commit. 
+    :warning: Do it only if the last commit was not pushed on the remote
+
 - `git revert cf97549a` Revert a commit by adding a new commit that do the same modifications, but in reverse (can make the logfile harder to read). The original commit is not deleted.
 
 
-- 
+- `git checkout cf97549a -b new_branch` Create a new branch back it time. 
 
 - `git rebase` Powerful to rewrite git history but dangerous. Come back to it when you are more experienced.
 
 --- 
 
-# Some useful tricks
+# More useful commands
 
-- `git commit --amend` Update the last commit. 
-    :warning: Do it only if the last commit was not pushed on the remote
+
 - `git add -u .` Only stage updated file in this folder and subfolder to be committed
+
+- `git blame file` Look at who last modified each line of the file and for which commit.
+
+- `git diff d0473176ecd` Check what was modified since the commit d0473176ecd
+
+- `git diff ea9dd4eef 9949f0cfb` Check what was modified between the commit ea9dd4eef and 9949f0cfb
+
+
 
 ---
 
 # Common mistakes
 
+- Avoid staging big binary file. Git cannot properly track their difference and store the full file for all versions.
+It's rather difficult to delete them once their are in the history (but doable).
 
+- Avoid automatically modifying all files (eg. automatic formatting). That may generates a lot of conflicts.
+
+--- 
+
+
+# Use modern git tools
+
+- Git has plugins for most widely used IDE (vscode, emacs, vim eclipse, ...)
+- Easy conflict solving, diff, blame, etc ...
+- Use the forges! (GitHub, GitLab)
+
+## Still to learn
+
+- `pre-commit` hook: automatic check the syntax of whatever you commit
+- Heavy history rewriting with `git rebase`
+- Cherry-pick commit (to just take what you want from a branch)
+  
