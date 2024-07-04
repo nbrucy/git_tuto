@@ -12,7 +12,7 @@ paginate: true
 
 - Git is a “Control Version System” (CVS),
 - To take track of modifications on text files (source code but non only),
-- Can be used locally (as an archive) or with a remote server, like Gihub, Gitlab, Gitea for collaboration.
+- Can be used locally (as an archive) or with a remote server, like Gihhub, Gitlab, Gitea for collaboration.
 - Many development tools are now linked with git 
 
 ![alt text](figures/git.png)
@@ -51,13 +51,14 @@ Eg. c82a22c39cbc32576f64f5c6b3f24b99ea8149c7 (you can shorten it as long as it s
 
 # Some git vocabulary (2)
 
+
+**work copy**: the status of the file in the repository. Some files may have uncommitted changes or not even be tracked by git.
+
 **staged files**: the files and changes that will be included in the next commit. Files can be added to that list thanks to the command git add.
 
 **branch**: git can track several version of the content of a repository, called branches 
 
 **local & remote repository**: change are usually done on a local version of the repository, and are then synchronised with a remote copy of it (on Github, Gitlab, Gitea, or other) to allow collaboration. 
-
-**work copy**: the status of the file in the repository. Some files may have uncommitted changes or not even be tracked by git.
 
 ---
 
@@ -137,7 +138,7 @@ In a collaborative environnement, merging is better done
 
 ![bg right:22%](figures/branch.png)
 
-Branch are useful to develop feature or bugfix in parallel
+Branch are useful to develop a new feature or bugfix in parallel
 
 ### The basic commands:
 
@@ -200,7 +201,7 @@ It's rather difficult to delete them once their are in the history (but doable).
 
 - Avoid automatically modifying all files (eg. automatic formatting). That may generates a lot of conflicts.
 
-- Read the messages! Git is giving very useful information in staus and error messages.
+- Read the messages! Git is giving very useful information in status and error messages.
 
 --- 
 
@@ -221,7 +222,6 @@ It's rather difficult to delete them once their are in the history (but doable).
 ---
 
 # Useful links
-
 
 ## Tutorials
 
