@@ -34,7 +34,7 @@ https://learngitbranching.js.org
 
 ---
 
-# Some git vocabulary
+# Some git vocabulary (1)
 
 **repository**: a folder containing the files that are tracked by the git system
 
@@ -49,7 +49,7 @@ https://learngitbranching.js.org
 
 --- 
 
-# Some git vocabulary
+# Some git vocabulary (2)
 
 **staged files**: the files and changes that will be included in the next commit. Files can be added to that list thanks to the command git add.
 
@@ -90,20 +90,45 @@ https://learngitbranching.js.org
 --- 
 
 
-# Deal with conflicts
+# Deal with conflicts (1)
 
-Conflict are common when working simultaneously on the the file. Don't be afraid of them.
+Conflict are common when working simultaneously on the the file. Don't be afraid of them. 
+
+1. Get the list of conflicted files
+```
+$ git status
+   On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   git.md
+
+no changes added to commit (use "git add" or "git commit -a")
+```
+
+---
+
+# Deal with conflict (2)
+
+2. Open the files and look for pattern like this. Choose the version you want to keep.
 
 ```
-#<<<<<<< HEAD
-When collaborating, merging is better done using the *Merge request* or *Pull request* feature of Gitlab/Github
+\<<<<<<< HEAD
+When collaborating, merging is better done
 ||||||| 9949f0c
-In a colloborative environnement, merging is better done using the *Merge request* or *Pull request* feature of Gitlab/Github
+In a colloborative environnement, merging is better done 
 =======
-In a collaborative environnement, merging is better done using the *Merge request* or *Pull request* feature of Gitlab/Github
+In a collaborative environnement, merging is better done
 >>>>>>> test
 ```
-
+3. Stage the merged file `git add git.md`
+4. Commit `git commit -m "solved merge conflict"`
 
 
 ---
