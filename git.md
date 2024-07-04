@@ -223,7 +223,7 @@ It's rather difficult to delete them once their are in the history (but doable).
 
 # Useful links
 
-## Tutorials
+## Intro tutorials
 
 - 🇬🇧/🇫🇷 https://learngitbranching.js.org
 - 🇬🇧 https://git-scm.com/docs/gittutorial
@@ -233,3 +233,14 @@ It's rather difficult to delete them once their are in the history (but doable).
 ## Command list
 - https://git-scm.com/docs
 - https://education.github.com/git-cheat-sheet-education.pdf
+
+
+---
+
+## Adding ssh key
+
+- https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+
+## Example of Gitignore files
+
+- https://github.com/github/gitignore
