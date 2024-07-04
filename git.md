@@ -86,6 +86,10 @@ https://learngitbranching.js.org
 
 # Deal with conflicts
 
+Conflict are common when working simultaneously on the the file. Don't be afraid of them.
+
+
+
 ---
 
 # Working with branches
