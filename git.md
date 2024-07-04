@@ -43,7 +43,7 @@ https://learngitbranching.js.org
 **log**: list of all the commit so far. 
 
 **commit hash**: the unique identifier of a commit. It can be found in the log.
-
+Eg. c82a22c39cbc32576f64f5c6b3f24b99ea8149c7 (you can shorten it as long as it stays unique).
 
 
 
@@ -53,7 +53,7 @@ https://learngitbranching.js.org
 
 **staged files**: the files and changes that will be included in the next commit. Files can be added to that list thanks to the command git add.
 
-**branch**: git can track several version of the same repository, called branchs 
+**branch**: git can track several version of the content of a repository, called branches 
 
 **local & remote repository**: change are usually done on a local version of the repository, and are then synchronised with a remote copy of it (on Github, Gitlab, Gitea, or other) to allow collaboration. 
 
@@ -114,7 +114,7 @@ no changes added to commit (use "git add" or "git commit -a")
 
 ---
 
-# Deal with conflict (2)
+# Deal with conflicts (2)
 
 2. Open the files and look for pattern like this. Choose the version you want to keep.
 
@@ -163,7 +163,7 @@ When collaborating, merging is better done using the *Merge request* or *Pull re
 
 - `git checkout cf97549a -b new_branch` Create a new branch back it time. 
 
-- `git rebase` Powerful to rewrite git history but dangerous. Come back to it when you are more experienced.
+- `git reset` , `git rebase` Powerful to rewrite git history but dangerous. Come back to it when you are more experienced.
 
 --- 
 
@@ -172,7 +172,18 @@ When collaborating, merging is better done using the *Merge request* or *Pull re
 
 - `git add -u .` Only stage updated file in this folder and subfolder to be committed
 
+- `git diff`  diff of what is changed but not staged
+- `git diff --staged` diff of what is staged but not yet committed
+- `git stash` Temporarily save unstaged changes (useful when merging with unfinished modifications)
+- `git stash pop` Recover the saved modifications
+
+---
+# Check git history
+
+ - `git log` Show all commits in the current branch’s history
+
 - `git blame file` Look at who last modified each line of the file and for which commit.
+
 
 - `git diff d0473176ecd` Check what was modified since the commit d0473176ecd
 
@@ -182,12 +193,14 @@ When collaborating, merging is better done using the *Merge request* or *Pull re
 
 ---
 
-# Common mistakes
+# Common mistakes & advices
 
 - Avoid staging big binary file. Git cannot properly track their difference and store the full file for all versions.
 It's rather difficult to delete them once their are in the history (but doable).
 
 - Avoid automatically modifying all files (eg. automatic formatting). That may generates a lot of conflicts.
+
+- Read the messages! Git is giving very useful information in staus and error messages.
 
 --- 
 
@@ -203,4 +216,20 @@ It's rather difficult to delete them once their are in the history (but doable).
 - `pre-commit` hook: automatic check the syntax of whatever you commit
 - Heavy history rewriting with `git rebase`
 - Cherry-pick commit (to just take what you want from a branch)
-  
+- Using `.gitignore` to avoid pushing temporary files
+
+---
+
+# Useful links
+
+
+## Tutorials
+
+- 🇬🇧/🇫🇷 https://learngitbranching.js.org
+- 🇬🇧 https://git-scm.com/docs/gittutorial
+- 🇬🇧 https://www.w3schools.com/git/default.asp
+- 🇫🇷 https://openclassrooms.com/fr/courses/7162856-gerez-du-code-avec-git-et-github 
+
+## Command list
+- https://git-scm.com/docs
+- https://education.github.com/git-cheat-sheet-education.pdf
