@@ -92,6 +92,20 @@ https://learngitbranching.js.org
 
 # Deal with conflicts
 
+Conflict are common when working simultaneously on the the file. Don't be afraid of them.
+
+```
+#<<<<<<< HEAD
+When collaborating, merging is better done using the *Merge request* or *Pull request* feature of Gitlab/Github
+||||||| 9949f0c
+In a colloborative environnement, merging is better done using the *Merge request* or *Pull request* feature of Gitlab/Github
+=======
+In a collaborative environnement, merging is better done using the *Merge request* or *Pull request* feature of Gitlab/Github
+>>>>>>> test
+```
+
+
+
 ---
 
 # Working with branches
