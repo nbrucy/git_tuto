@@ -102,7 +102,7 @@ Branch are useful to develop feature or bugfix in parallel
 
 ### Merging branches
 
-In a colloborative environnement, merging is better done using the *Merge request* or *Pull request* feature of Gitlab/Github
+In a collaborative environnement, merging is better done using the *Merge request* or *Pull request* feature of Gitlab/Github
 
 ---
 
