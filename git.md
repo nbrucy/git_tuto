@@ -53,7 +53,7 @@ Eg. c82a22c39cbc32576f64f5c6b3f24b99ea8149c7 (you can shorten it as long as it s
 
 **staged files**: the files and changes that will be included in the next commit. Files can be added to that list thanks to the command git add.
 
-**branch**: git can track several version of the same repository, called branchs 
+**branch**: git can track several version of the content of a repository, called branches 
 
 **local & remote repository**: change are usually done on a local version of the repository, and are then synchronised with a remote copy of it (on Github, Gitlab, Gitea, or other) to allow collaboration. 
 
