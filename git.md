@@ -3,11 +3,6 @@ marp: true
 paginate: true
 ---
 
-
-![bg right:30%](figures/linus.jpg)
-
-
-
 # What is git
 
 - Git is a “Control Version System” (CVS),
